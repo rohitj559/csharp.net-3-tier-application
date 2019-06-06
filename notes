@@ -1,0 +1,79 @@
+Course Outline:
+
+Identifying Classes - Identify classes from requirements, Building entity classes
+Seperating Responsibilities - 
+Establishing Relationaships
+Leveraging Reuse - Building Reusable components, Understanding Interfaces
+----------------------------------------------------------------------------------
+1. Identify classes from requirements:
+----------------------------------------------------------------------------------
+Intro
+
+a> Requirements
+b> Analyze the problem
+c> Start with nouns
+d> Define appropriate members
+c> Classes
+
+----------------------------------------------------------------------------------
+Analyze the business problem
+
+Manage business, residential, government and educator type of customers
+Manage our products
+Accept orders from customers online or through call center
+----------------------------------------------------------------------------------
+Start with the nouns
+
+Manage business, residential, government and educator type of customers --> customer class
+Manage our products --> product class
+Accept orders from customers online or through call center - order class
+----------------------------------------------------------------------------------
+Define appropriate members
+
+properties: data
+methods: operations
+
+Acme Customer Management System:
+
+Customer:
+Customer's name(Last Name, First Name),
+Email Address,
+Home and Work Address
+---------------------
+Validate(),
+Retrieve(),
+Save{}
+
+Product:
+Product Name,
+Description,
+Current Price
+---------------------
+Validate(),
+Retrieve(),
+Save{}
+
+Order
+Customer,
+Order Date,
+Shipping address,
+Order items
+---------------------
+Validate(),
+Retrieve(),
+Save{}
+
+Order Item
+Product,
+quantity
+Purchase price
+---------------------
+Validate(),
+Retrieve(),
+Save{}
+------------------------------------------------------------
+
+
+
+
+
