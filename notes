@@ -109,6 +109,18 @@ If the property needs to be accessed within the class project(BL layer), set it 
 crete an elaborated getter and setter properties if the backing property needs to undergo some validation or modification
 else go for the default shortened getter/setter property. This doenot create a backing field but internally it assumes one
 
+property having only getter would be a readonly property
+property having only setter would be a writeonly property
+--------------------------------------------------------------------------------------------------------------------------
+Using snippets:
+
+edit - intellisense - insert snippet
+or 
+right click - Snippet - Insert Snippet
+
+
+
+
 
 
 
