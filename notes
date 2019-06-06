@@ -72,6 +72,49 @@ Validate(),
 Retrieve(),
 Save{}
 ------------------------------------------------------------
+Abstraction:
+Abstracting away extreneous details and considering only relevant details
+
+Encapsulation:
+Technique to hide/encapsulate implementation details within a class.
+properties are exposed through getters/setters and operations through methods.
+Property getters/setters and methods define the class interface to the rest of the application.
+
+-----------------------------------------------------------------------------------------------
+Building Entity classes
+-----------------------------------------------------------------------------------------------
+Layering the application:
+
+seperate layers for UI, BL and DL
+UI ==> User Interfaces
+BL ==> Business Logic Layer
+DL ==> Data Access Layer
+common ==> Utility/common layer with helper classes used through out the application 
+
+- UI, BL, DL amd common layers represent seperate C# projects
+
+- UI layer gets built as an exe
+- BL, DL and common layers would be built as dlls
+-----------------------------------------------------------------------------------------------
+Building the business logic component:
+
+create a seperate class library for business layer
+-----------------------------------------------------------------------------------------------
+Building a class: properties
+
+create a private backing field ex: _lastName
+crete a getter/setter property for the above backing field. Set its access level to public
+If the property needs to be accessed within the class project(BL layer), set it to internal
+
+crete an elaborated getter and setter properties if the backing property needs to undergo some validation or modification
+else go for the default shortened getter/setter property. This doenot create a backing field but internally it assumes one
+
+
+
+
+
+
+
 
 
 
