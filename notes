@@ -107,7 +107,7 @@ crete a getter/setter property for the above backing field. Set its access level
 If the property needs to be accessed within the class project(BL layer), set it to internal
 
 crete an elaborated getter and setter properties if the backing property needs to undergo some validation or modification
-else go for the default shortened getter/setter property. This doenot create a backing field but internally it assumes one
+else go for the default shortened getter/setter property. This doesnot create a backing field but internally it assumes one
 
 property having only getter would be a readonly property
 property having only setter would be a writeonly property
@@ -140,6 +140,10 @@ Assert - Compare Expected with Actual value and determine the test outcome
 To perform test: 
 Test - Windows - Test Explorer
 Hit Run or right click and Run
+--------------------------------------------------------------------------------------------------
+Static Modifier:
+
+If we want to create a property which has to be shared across all the instances of a type, we use a Static modifier.
 
 
 

@@ -39,5 +39,7 @@ namespace ACM.BL
                 _lastName = value;
             }
         }
+
+        public static int InstanceCount { get; set; }
     }
 }

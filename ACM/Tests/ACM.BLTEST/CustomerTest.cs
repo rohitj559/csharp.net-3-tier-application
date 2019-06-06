@@ -58,5 +58,30 @@ namespace ACM.BLTEST
             // Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void StaticTest()
+        {
+            // Arrange
+            var c1 = new Customer();
+            c1.FirstName = "Rohit";
+            Customer.InstanceCount += 1;
+
+            var c2 = new Customer();
+            c1.FirstName = "Arif";
+            Customer.InstanceCount += 1;
+
+            var c3 = new Customer();
+            c1.FirstName = "Tejas";
+            Customer.InstanceCount += 1;
+
+            int expected = 3;
+
+            // Act
+            int actual = Customer.InstanceCount;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
