@@ -144,6 +144,18 @@ Hit Run or right click and Run
 Static Modifier:
 
 If we want to create a property which has to be shared across all the instances of a type, we use a Static modifier.
+--------------------------------------------------------------------------------------------------------------------
+Terms:
+
+Signature --> Includes Method name and arguments. Doesnot include return type
+Overloading --> Same method name but different arguments
+Contract --> 
+right click - outlining - collapse to definition ==> we obtain all the properties and methods of the class
+properties and methods with public access modifiers define the contract of the class, It is also called the Interface. 
+These properties and methods should not be removed or the properties and method signatures should not be modified. However, additional 
+properties and mmethods can be added.
+right click - outlining - Toggle all outlining ==> Retrieve back all the definitions
+--------------------------------------------------------------------------------------------------------------------------------------
 
 
 
