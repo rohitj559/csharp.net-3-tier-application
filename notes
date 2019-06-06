@@ -117,6 +117,32 @@ Using snippets:
 edit - intellisense - insert snippet
 or 
 right click - Snippet - Insert Snippet
+--------------------------------------------------------------------------------------------------
+Testing the class:
+
+We write unit tests for each property and method in the class
+--------------------------------------------------------------------------------------------------
+Testing the class: Valid values
+
+within main solution, create a seperate folder for Tests.
+Inside the Tests folder create a test project with appropriate Test folder path
+
+Include BL class library project within refernces of the Test project
+Use the BL component added in the refernces through Using statement
+Rename the Test class filename appropriately
+
+Use Arrange, Act and Assert structures within the test methods
+
+Arrange - We set up for our tests and get the expected value
+Act - Access the property or method we are testing and get the actual value
+Assert - Compare Expected with Actual value and determine the test outcome
+
+To perform test: 
+Test - Windows - Test Explorer
+Hit Run or right click and Run
+
+
+
 
 
 
