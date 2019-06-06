@@ -41,5 +41,34 @@ namespace ACM.BL
         }
 
         public static int InstanceCount { get; set; }
+
+        // Validates the customer method
+        public bool Validate()
+        {
+            var isValid = true;
+
+            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(email)) isValid = false;
+
+            return isValid;
+        }
+
+        // Retrieve all customers
+        public List<Customer> Retrieve()
+        {
+            return new List<Customer>();
+        }
+
+        // Retrieve one customer
+        public Customer Retrieve(int customerId)
+        {
+            return new Customer();
+        }
+
+        // Save the customer
+        public bool Save()
+        {
+            return true;
+        }
     }
 }
