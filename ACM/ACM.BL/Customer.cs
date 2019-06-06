@@ -8,6 +8,16 @@ namespace ACM.BL
 {
     public class Customer
     {
+        public int CustomerId { get; private set; }
+        public string email { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return LastName + ", " + FirstName;
+            }
+        }
+        public string FirstName { get; set; }
         private string _lastName;
         public string LastName
         {
@@ -20,8 +30,5 @@ namespace ACM.BL
                 _lastName = value;
             }
         }
-
-        public string FirstName { get; set; }
-
     }
 }
