@@ -64,21 +64,11 @@ namespace ACM.BL
         }
 
         // Retrieve all customers
-        public List<Customer> Retrieve()
-        {
-            return new List<Customer>();
-        }
+        //public List<Customer> Retrieve()
+        //{
+        //    return new List<Customer>();
+        //}        
 
-        // Retrieve one customer
-        public Customer Retrieve(int customerId)
-        {
-            return new Customer();
-        }
-
-        // Save the customer
-        public bool Save()
-        {
-            return true;
-        }
+        
     }
 }
