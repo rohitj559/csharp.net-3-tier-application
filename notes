@@ -164,6 +164,11 @@ Constructor with no parameters ==> default constructor
 Implicit default constructor is defined automatically
 When there are overloaded constructors in the class, we need to explicitly define a default constructor. This is because an object cannot be created 
 without passing parameter. An implicit default constructor wont be automatically created when there are overloaded constructors defined.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Building remaining classes:
+
+using nullable types makes a distiction between properties having a value of 0 and null. Here 0 would be a valid value and null would be invalid.
+DateTimeOffset - Tracks date, time and timezone.
 
 
 
