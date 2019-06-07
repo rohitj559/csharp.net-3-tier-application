@@ -156,6 +156,14 @@ These properties and methods should not be removed or the properties and method 
 properties and mmethods can be added.
 right click - outlining - Toggle all outlining ==> Retrieve back all the definitions
 --------------------------------------------------------------------------------------------------------------------------------------
+Building the class: Constructors
+
+Constructors are used to initilize the object
+In many cases the properties of the object default to valid values
+Constructor with no parameters ==> default constructor
+Implicit default constructor is defined automatically
+When there are overloaded constructors in the class, we need to explicitly define a default constructor. This is because an object cannot be created 
+without passing parameter. An implicit default constructor wont be automatically created when there are overloaded constructors defined.
 
 
 
