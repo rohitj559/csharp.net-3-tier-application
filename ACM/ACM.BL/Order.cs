@@ -30,17 +30,5 @@ namespace ACM.BL
 
             return isValid;
         }
-
-        // Retrieve one customer
-        public Order Retrieve(int OrderId)
-        {
-            return new Order();
-        }
-
-        // Save the customer
-        public bool Save()
-        {
-            return true;
-        }
     }
 }

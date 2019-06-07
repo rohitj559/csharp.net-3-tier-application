@@ -35,21 +35,9 @@ namespace ACM.BL
         }
 
         // Retrieve all customers
-        public List<Product> Retrieve()
-        {
-            return new List<Product>();
-        }
-
-        // Retrieve one customer
-        public Product Retrieve(int productId)
-        {
-            return new Product();
-        }
-
-        // Save the customer
-        public bool Save()
-        {
-            return true;
-        }
+        //public List<Product> Retrieve()
+        //{
+        //    return new List<Product>();
+        //}
     }
 }

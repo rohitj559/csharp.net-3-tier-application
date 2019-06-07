@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class CustomerRepository
+    public class ProductRepository
     {
         // Retrieve one customer
-        public Customer Retrieve(int customerId)
+        public Product Retrieve(int productId)
         {
-            // Create the instance of customer class
+            // Create the instance of product class
             // Pass in the requested id
-            Customer customer = new Customer(customerId);
+            Product product = new Product(productId);
 
             // Code that retrieves defined customer
 
             // Temporary hard coded values to return 
             // a populated customer
-            if(customerId == 1)
+            if (productId == 1)
             {
-                customer.Email = "rohitj559@gmail.com";
-                customer.LastName = "Jagannath";
-                customer.FirstName = "Rohit";
+                product.ProductName = "SomeProduct";
+                product.ProductDescription = "SomeDescription";
+                product.CurrentPrice = 12;
             }
-            return customer;
+            return product;
         }
 
         // Save the current customer
-        public bool Save(Customer customer)
+        public bool Save(Product product)
         {
             // Code that saves passed in customer
 
