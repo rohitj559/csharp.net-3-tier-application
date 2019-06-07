@@ -188,9 +188,10 @@ layer. We can reduce this coupling by extracting and seperating the retrieval an
 Cohesion -->
 How related everything is for the purpose of the class. 
 If there are properties and methods in the class which are not related to the class, they need to be moved to other classes. Ex: Address property needs a lot of rework on itself like formatting. Customer and Order classes cannot take up this responsibility and so address functionalities need to be moved to sepearate class.
-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 Revisiting the class:
 By convention, a class responsible for retrieving and saving data is called a repository class. That is putting code related to datastoe into its own class. This forms the essence of Repository pattern.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
