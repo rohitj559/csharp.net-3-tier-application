@@ -5,6 +5,7 @@ Seperating Responsibilities -
 Establishing Relationaships
 Leveraging Reuse - Building Reusable components, Understanding Interfaces
 ----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 1. Identify classes from requirements:
 ----------------------------------------------------------------------------------
 Intro
@@ -153,7 +154,7 @@ Contract -->
 right click - outlining - collapse to definition ==> we obtain all the properties and methods of the class
 properties and methods with public access modifiers define the contract of the class, It is also called the Interface. 
 These properties and methods should not be removed or the properties and method signatures should not be modified. However, additional 
-properties and mmethods can be added.
+properties and methods can be added.
 right click - outlining - Toggle all outlining ==> Retrieve back all the definitions
 --------------------------------------------------------------------------------------------------------------------------------------
 Building the class: Constructors
@@ -169,6 +170,26 @@ Building remaining classes:
 
 using nullable types makes a distiction between properties having a value of 0 and null. Here 0 would be a valid value and null would be invalid.
 DateTimeOffset - Tracks date, time and timezone.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+6. Seperating Responsibilities:
+----------------------------------------------------------------------------------
+Seperating Responsibilities: 
+- minimizes coupling
+- Maximizes cohesion
+- Simplifies maintenance
+- Improoves testability
+
+Coupling -->
+Each and every class could have code to retrieve and save data using the data access layer. This make the classes tightly coupled with the data access 
+layer. We can reduce this coupling by extracting and seperating the retrieval and saving code into seperate classes.
+
+Cohesion -->
+How related everything is for the purpose of the class. 
+If there are properties and methods in the class which are not related to the class, they need to be moved to other classes. Ex: Address property needs a lot of rework on itself like formatting. Customer and Order classes cannot take up this responsibility and so address functionalities need to be moved to sepearate class.
+----------------------------------------------------------------------------------
+
 
 
 
