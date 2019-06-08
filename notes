@@ -227,6 +227,11 @@ Use inheritence only if the derived classes has specialized properties or method
 ---------------------------------------------------------------------------------------------------------------------------
 Leveraging reuse through inheritence
 ---------------------------------------------------------------------------------------------------------------------------
+Modifying the base class functionality specific to the child class implementing it is called overriding
+
+Polymorphism: 
+Inheritence based polymorphism --> Override base class functionality using child class
+
 
 
 
