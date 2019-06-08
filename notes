@@ -173,7 +173,8 @@ DateTimeOffset - Tracks date, time and timezone.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------
-6. Seperating Responsibilities:
+6. Seperating Respon
+sibilities:
 ----------------------------------------------------------------------------------
 Seperating Responsibilities: 
 - minimizes coupling
@@ -192,6 +193,22 @@ If there are properties and methods in the class which are not related to the cl
 Revisiting the class:
 By convention, a class responsible for retrieving and saving data is called a repository class. That is putting code related to datastoe into its own class. This forms the essence of Repository pattern.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Establishing Relationships
+--------------------------------------------------------------------
+
+Types of Relationships:
+
+Collaboration("uses a") --> One object uses or collaborates with another object which is not related. Example: CustomerRepository object uses the customer object to populate the latter after a retrieve. However CustomerRepository and customer object are independent of each other.
+
+Composition("has a") --> Defines a relationship between an object and its associated objects. Example: Order has a Cistomer, Order has a shipping address and order has order items. Without those, the order is meaningless. 
+Composition is divided into two categories - i) Aggregarion ii) Composition
+i) Aggregation - Object consisting of objects which can exist outside of the relationship.Ex: Order has a customer but Customer can exist without an order.
+ii) Composition - Object and containing objects are closely related to each other. One cannot exist without the other.Ex: Order has a set of order items but order items cannot exist witout an order.
+
+Inheritence("is a") --> Ex: Business Customer is of type customer, Residential customer is of type customer and so on.
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
