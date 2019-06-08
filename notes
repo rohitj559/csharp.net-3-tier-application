@@ -224,6 +224,10 @@ Classes which are specialized mechanism of other classes.
 Use inheritence only if the derived classes has specialized properties or methods which require unique code and by leverage reusable code from the base class.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
+---------------------------------------------------------------------------------------------------------------------------
+Leveraging reuse through inheritence
+---------------------------------------------------------------------------------------------------------------------------
+
 
 
 

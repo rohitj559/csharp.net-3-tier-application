@@ -22,7 +22,8 @@ namespace ACM.BL
         public int CustomerType { get; set; }
         public List<Address> AddressList { get; set; }
         public int CustomerId { get; private set; }
-        public string Email { get; set; }
+        public string Email { get; set; }        
+
         public string FullName
         {
             get
@@ -66,12 +67,14 @@ namespace ACM.BL
             return isValid;
         }
 
+        public override string ToString() => FullName;
+
         // Retrieve all customers
         //public List<Customer> Retrieve()
         //{
         //    return new List<Customer>();
         //}        
 
-        
+
     }
 }

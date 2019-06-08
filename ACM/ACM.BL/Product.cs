@@ -34,6 +34,8 @@ namespace ACM.BL
             return isValid;
         }
 
+        public override string ToString() => ProductName;
+
         // Retrieve all customers
         //public List<Product> Retrieve()
         //{

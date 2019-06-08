@@ -18,7 +18,7 @@ namespace ACM.BLTEST
                 ProductName = "SomeProduct",
                 ProductDescription = "SomeDescription",
                 CurrentPrice = 12
-            };
+            };            
 
             // Act
             Product actualProduct = productRepository.Retrieve(1);

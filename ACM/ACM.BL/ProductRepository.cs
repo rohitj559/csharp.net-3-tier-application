@@ -25,6 +25,11 @@ namespace ACM.BL
                 product.ProductDescription = "SomeDescription";
                 product.CurrentPrice = 12;
             }
+
+            Object obj = new Object();
+            Console.WriteLine($"Object Name: {obj.ToString()}");
+            Console.WriteLine($"Product Name: {product.ToString()}");
+
             return product;
         }
 
