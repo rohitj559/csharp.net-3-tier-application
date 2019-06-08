@@ -219,7 +219,10 @@ Composition: Ids
 
 Usage of Id properties over object properties will have advantages like reduced coupling(Ex: While loading the order class, the order class does not need to refernce the customer or address classes) and increases efficienty(loading an object doesnot load data for the dependencies)
 ----------------------------------------------------------------------------------------------------------------------------------------------------- 
-
+Inheritence("is a"): 
+Classes which are specialized mechanism of other classes.
+Use inheritence only if the derived classes has specialized properties or methods which require unique code and by leverage reusable code from the base class.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
