@@ -200,9 +200,10 @@ Establishing Relationships
 
 Types of Relationships:
 
-Collaboration("uses a") --> One object uses or collaborates with another object which is not related. Example: CustomerRepository object uses the customer object to populate the latter after a retrieve. However CustomerRepository and customer object are independent of each other.
+Collaboration("uses a") --> One object uses or collaborates with another object which is not related. Ex: CustomerRepository object uses the customer object to populate the latter after a retrieve. However CustomerRepository and customer object are independent of each other. Inotherwords -
+Relationaship between Entity(customer object) and Repository(CustomerRepository object). Here Repository uses the entitiy to populate on a retrieve and serialize on a save.
 
-Composition("has a") --> Defines a relationship between an object and its associated objects. Example: Order has a Cistomer, Order has a shipping address and order has order items. Without those, the order is meaningless. 
+Composition("has a") --> Defines a relationship between an object of one class and its associated objects from other classes. Example: Customer has a address, Order has a Customer, Order has a shipping address and order has order items, orderItem has a product. Without the constituents, the parent object is meaningless. The constituents are represented as properties. That is Customer has home address and shipping address properties, Order has a Customer property, Order has a shipping address property and order has order items property, orderItem has a product property. The composition relationships also have cardinality. That is 1 to 1 or 1 to many relationships. Ex: Order has a one to one relationship with customer, Order has one to many relationship with order items.
 Composition is divided into two categories - i) Aggregarion ii) Composition
 i) Aggregation - Object consisting of objects which can exist outside of the relationship.Ex: Order has a customer but Customer can exist without an order.
 ii) Composition - Object and containing objects are closely related to each other. One cannot exist without the other.Ex: Order has a set of order items but order items cannot exist witout an order.
