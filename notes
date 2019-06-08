@@ -215,7 +215,10 @@ Composition: References
 Using address object within Customer object - 
 Adding a list<address> property to customer class creates problems(null reference exception) when instantiating the customer class. To avoid this, we instantiate the list<address> in overloaded constructor. We instantiate the same with default constructor by chaining the default constructor to overloaded constructor. 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+Composition: Ids
 
+Usage of Id properties over object properties will have advantages like reduced coupling(Ex: While loading the order class, the order class does not need to refernce the customer or address classes) and increases efficienty(loading an object doesnot load data for the dependencies)
+----------------------------------------------------------------------------------------------------------------------------------------------------- 
 
 
 
