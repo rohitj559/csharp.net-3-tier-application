@@ -210,7 +210,10 @@ ii) Composition - Object and containing objects are closely related to each othe
 
 Inheritence("is a") --> Ex: Business Customer is of type customer, Residential customer is of type customer and so on.
 --------------------------------------------------------------------------------------------------------------------------------------------------
+Composition: References
 
+Using address object within Customer object - 
+Adding a list<address> property to customer class creates problems(null reference exception) when instantiating the customer class. To avoid this, we instantiate the list<address> in overloaded constructor. We instantiate the same with default constructor by chaining the default constructor to overloaded constructor. 
 
 
 
